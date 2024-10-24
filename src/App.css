@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  .wrapper {
+    width: 400px;
+    padding: 30px;
+    background-color: #1a1a40;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .create-form {
+    height: 50px;
+    width: 100%;
+    margin: 25px 0;
+    border: 2px solid #4e44e0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    transition: border-color 0.3s;
+  }
+  
+  .create-form:hover {
+    border-color: #7c73e6;
+  }
+  
+  .create-form > input {
+    flex: 1;
+    background-color: transparent;
+    color: white;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .create-form > button {
+    width: 60px;
+    background-color: #5b57d9;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .create-form > button:hover {
+    background-color: #7c73e6;
+  }
+  .todo {
+    background-color: #4e44e0;
+    height: 50px;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; 
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  .todo:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  
+  .completed {
+    opacity: 0.5;
+    text-decoration: line-through 2px black;
+  }
+  
+  .todo > svg {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .todo > svg:hover {
+    color: #ff4b5c;
+  }
+  
